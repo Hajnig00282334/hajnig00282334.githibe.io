@@ -24,7 +24,7 @@
 	font-style: italic;
 	font-size: 45px;
 	font-weight: bold;
-	color: purple;
+
 }
 .nav-link{
 	font-size: 25px;
@@ -48,11 +48,7 @@
   width: 70%;
   padding-bottom: 50px;
 }
-.navigation{
-	min-width: 250px;
-    background-color: pink;
-    margin-top: 50px;
-}
+
 ul {
   list-style-type: none;
   
@@ -148,29 +144,66 @@ body{
   padding: 0;
 }
 section {
-  height: 600px;
+  height: auto;
   background-image: url("../img/wasabi.jpeg");
   background-repeat: no-repeat;
   opacity: 0.7;
   margin-bottom: 10px;
  
 }
+.Team{
+  text-align: center;
+}
 /*box images*/
 .box {
   text-align: center;
 }
 /*flipping*/
+.back{
+  background-color:rgb(212, 212, 212);
+}
+img{
+  margin-top:5px;
+}
+h6{
+  background-color:rgb(212, 212, 212);
+
+}
+   
+.card-flip {
+  perspective: 1000px;
+  &:hover .flip,
+  &.hover .flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.card-flip,
+.front,
+.back {
+  width: 320px;
+  height: 480px;
+}
+
 .flip {
-    height: 199px;
-    width: 300px;
-    margin: 0 auto;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
-.flip img {
-    width: 300px;
-    height: auto;
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.flip .back {
-    background: #2184cd;
-    color: #fff;
-    text-align: center;
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
 }
