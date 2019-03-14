@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Packages</title>
+    <title>Home page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -12,12 +12,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
     <link href="css/chef_website.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.shop.js"></script>
+
 </head>
 
 <body>
@@ -44,9 +43,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="packages.html">Packages</a>
+                </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -56,121 +55,44 @@
     </nav>
     <!-- Nav end-->
 
-    <!-- Packages-->
-    <div class="col-md-12 d-flex justify-content-center mb-5">
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+    <!-- Content -->
 
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 mt-3">
-                    <!---->
-                    <div class="card" style="width: 18rem;">
-                        <img src="imges/bald_eagle.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <!-- Kolbasz-->
-                            <div id="products">
-                                <ul>
-                                    <li>
-                                        <div class="product-image">
-                                            <img src="images/wine1.jpg" alt="" />
-                                        </div>
-                                        <div class="product-description" data-name="Wine #1" data-price="5">
-                                            <h3 class="product-name">Package 1</h3>
-                                            <h5>BUSINESS CATERING</h5>
-                                            <p class="card-text">For any Corporate Event, Conference, Promotion,
-                                                Business Meeting or
-                                                Product Launch our
-                                                expert staff can help. My 17 years of experience
-                                                in Catering ensure I deliver the highest quality to impress when it
-                                                really matters.</p>
-                                            <p class="product-price">&euro; 5</p>
-                                            <form class="add-to-cart" action="cart.html" method="get">
-                                                <div>
-                                                    <label for="qty-1">Quantity</label>
-                                                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                                                </div>
-                                                <p><input  class="button" type="submit" value="Buy package 1" class="btn" /></p>
-                                            </form>
-                                        </div>
-                                    </li>
+    <h1>Your Shopping Cart</h1>
+    <form id="shopping-cart" action="cart.html" method="get">
+        <table class="shopping-cart">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col" colspan="2">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <p id="sub-total">
+            <strong>Sub Total</strong>: <span id="stotal"></span>
+        </p>
+        <ul id="shopping-cart-actions">
+            <li>
+                <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+            </li>
+            <li>
+                <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+            </li>
+            <li>
+                <a href="index.html" class="btn">Continue Shopping</a>
+            </li>
+            <li>
+                <a href="checkout.html" class="btn">Go To Checkout</a>
+            </li>
+        </ul>
+    </form>
 
 
-                                </ul>
-                            </div>
-                            <!-- idaig-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 mt-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/donkey.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h3>Package 2</h3>
-                            <h5>PARTY CATERING</h5>
-                            <p class="card-text">Garden Party, BBQ Event or Private Function. Let us provide you
-                                with the most delicious menu's cooked to perfection by our expert
-                                Chef's. At Home, in a Marquee or a private venue we can deliver the highest
-                                quality food and service.</p>
-                            <div class="desc">&euro; 15.95</div>
-                            <form class="add-to-cart" action="cart.html" method="get">
-                                <div>
-                                    <label for="qty-3">Quantity</label>
-                                    <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-                                </div>
-                                <p><input class="button" type="submit" value="Buy package 2" class="btn" /></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 mt-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="imges/elephant.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h3>Package 3</h3>
-                            <h5>Consultancy</h5>
-                            <p class="card-text">Menu Planning
-                                New Openings
-                                Kitchen Training
-                                Stock Management
-                                Staff Training
-                                Kitchen Management
-                                Due Diligence Training
-                                Health and Safety
-                                HACCP Systems</br>
-                                Culinary & Food Service Training</p>
-                            <div class="desc">&euro; 15.95</div>
-                            <form class="add-to-cart" action="cart.html" method="get">
-                                <div>
-                                    <label for="qty-3">Quantity</label>
-                                    <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-                                </div>
-                                <p><input class="button" type="submit" value="Buy package 3" class="btn" /></p>
-                            </form>
+    <!-- Content end-->
 
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <h4>Interactive Three-course Dinner Cooking Classes</h4>
-            <p>Bring your friends or family together for a lively and interactive culinary adventure in your own home.
-                Our private cooking classes
-                are designed to walk groups of 8 to 14 through the steps and skills required to create and present a
-                three or four course meal. Cooking
-                class menus are focused on popular regional cuisines. Cooking class participants work in pairs preparing
-                each menu item, gaining skills and
-                confidence, and of course having fun! Afterwards, the group enjoys the fruits of their labour and sits
-                down to share a meal, a glass of wine
-                or cocktails and some laughs. If your group is looking for more of a challenge or to add some excitement
-                to the evening, consider the Master
-                Chef or Black Box challenge.</p>
-        </div>
-    </div>
-    <!-- End Packages-->
     <footer class="page-footer font-small mdb-color pt-4">
 
         <!-- Footer Links -->
@@ -244,7 +166,7 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                     <p>
-                        <i class="fas fa-home mr-3"></i> Ireland, Galway</p>
+                        <i class="fas fa-home mr-3"></i>Ireland, Galway</p>
                     <p>
                         <i class="fas fa-envelope mr-3"></i> chefpatrickloewen@gmail.com</p>
                     <p>
@@ -313,16 +235,9 @@
         </div>
         <!-- Footer Links -->
 
+
     </footer>
-    <!--moving image*/-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-        $('section').mousemove(function (e) {
-            var moveX = (e.pageX * -1 / 10);
-            var moveY = (e.pageY * -1 / 10);
-            $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-        })
-    </script>
+    </div>
 </body>
 
 </html>

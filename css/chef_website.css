@@ -99,9 +99,7 @@ ul {
  
 }
 
-li {
-  float: left;
-}
+
 
 li a {
   display: block;
@@ -198,52 +196,67 @@ section {
 .box {
   text-align: center;
 }
-/*flipping*/
-.back{
-  background-color:rgb(212, 212, 212);
+/*shopping card table*/
+.shopping-cart {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  margin-left: 60px;
 }
-img{
-  margin-top:5px;
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
 }
-h6{
-  background-color:rgb(212, 212, 212);
-
+.btn, a.btn {
+  display: inline-block;
+  background: #cc1400;
+  color: #fff;
+  font: 1em 'PT Serif', serif;
+  padding: 0.3em 1em;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #a00;
 }
-   
-.card-flip {
-  perspective: 1000px;
-  &:hover .flip,
-  &.hover .flip {
-    transform: rotateY(180deg);
-  }
+#shopping-cart-actions {
+  margin: 1.5em 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
-
-.card-flip,
-.front,
-.back {
-  width: 320px;
-  height: 480px;
+#content > h1, #checkout-order-form h2 {
+  font-size: 2em;
+  text-align: center;
 }
-
-.flip {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+.shopping-cart th {
+  font-size: 1.3em;
+  padding: 0.3em;
+  width: 33.3%;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
 }
-
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
+#masthead {
+  margin-top: 3em;
+  padding: 2em 0 0.5em 0;
+  border-bottom: 1px solid #ddd;
 }
-
-.front {
-  z-index: 2;
-  transform: rotateY(0deg);
+#shopping-cart-actions li {
+  display: inline-block;
+  margin-right: 1em;
 }
-
-.back {
-  transform: rotateY(180deg);
+h1{
+  text-align: center;
+}
+#content{
+  display: block;
+  margin-top: 0em;
+}
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+#sub-total, #shipping {
+  margin: 1.5em 0;
+  text-align: right;
 }
