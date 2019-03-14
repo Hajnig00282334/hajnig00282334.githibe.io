@@ -369,7 +369,6 @@
 				var name =  $product.data( "name" );
 				
 				$form.on( "submit", function() {
-					alert("func");
 					var qty = self._convertString( $form.find( ".qty" ).val() );
 					var subTotal = qty * price;
 					var total = self._convertString( self.storage.getItem( self.total ) );
