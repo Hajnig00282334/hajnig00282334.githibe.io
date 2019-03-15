@@ -15,7 +15,7 @@ body {
 	font: 100%/1 'PT Serif', serif;
 	background: #fff;
 	color: #333;
-	border-top: 0.5em solid #cc8500;	
+	border-top: 3.5em solid #B9D6F2;	
 }
 
 :active, :focus {
@@ -94,14 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-description {
 	padding: 1em;
-	background: #5d9bdd;
+	background: #818479;
 	color: #fff;
 	border-radius: 5px;
 }
 
 .product-name {
 	text-align: center;
-	color: #fc0;
+	color: #B9D6F2;
 	margin: 0;
 	font-size: 1.4em;
 	padding-bottom: 0.2em;
@@ -139,7 +139,7 @@ form input.qty {
 
 .btn, a.btn {
 	display: inline-block;
-	background: #cc1400;
+	background: #B9D6F2;
 	color: #fff;
 	font: 1em 'PT Serif', serif;
 	padding: 0.3em 1em;
@@ -346,4 +346,10 @@ body#checkout-page #site-info {
 .mdb-color {
     background-color: #45526e;
 }
+/*package page button that goes to home page*/
+.interactive h4{
+	
+	float: center;
+  
+  }
 

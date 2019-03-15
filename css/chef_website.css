@@ -5,7 +5,16 @@
 	border-style: solid;
     outline-style: solid;
     margin: 10px;
+    float: left;
 }
+P{
+	font-family: "times new roman", times, serif;
+	margin: 10px;
+	margin-top: 20px;
+	clear: left;
+	
+}
+/*about picture end*/
 .navbar-nav {
   float:none;
   margin:0 auto;
@@ -17,48 +26,7 @@
   display: inline-block;
   float:none;
 }
-/*pakeges*/
-.form-sec{width:400px;
-  background:#ccc; 
-  padding:15px;width: 400px;
- 
- padding: 15px;
- box-shadow: 0 0 4px #ccc;
-}
-.row{
-	border-style: hidden;
-}
-.card-body{
-	color: #413F54;
-	text-align:center;
-}
-h4{
-	padding: 30px;
-	text-align:center;
-    font-family: "times new roman", times, serif;
-	font-style: italic;
-	font-size: 35px;
-	font-weight: bold;
-}
-.button{
-	color: white;
-	background-color: #413F54;
-	border-radius: 6px;
-}
-.img centered{
-  padding: 20px;
-}
-.card-body{
-	color: #413F54;
-  text-align:center;
-}
-p{
-	margin: 10px;
-	margin-top: 20px;
-	clear: left;
-	font-family: "times new roman", times, serif;
-}
-/*pakeges end*/
+
 /*navbar-brand*/
 .navbar-brand{
   font-family: "times new roman", times, serif;
