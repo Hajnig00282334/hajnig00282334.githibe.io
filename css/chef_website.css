@@ -1,14 +1,10 @@
 
 body{
-  background-image: url("../img/cartoon-chef-pattern.jpg");
-  background-attachment: fixed;
+  background-color: beige;
+
 
 }
-.container {
-  width: 1200px;
-  background-color: white;
-  
-}
+
 
 /*about picture*/
 .img-fluid {
@@ -51,8 +47,7 @@ P{
 }
 .nav-link{
   font-size: 25px;
-  background-color: #B9D6F2;
-  border-radius: 5px;
+  
 	
 }
 
