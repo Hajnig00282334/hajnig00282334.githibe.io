@@ -5,6 +5,15 @@ body{
 
 }
 
+/* Services Text*/
+#text h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+}
+#text p{
+  font-size: 20px;
+}
+
 
 /*about picture*/
 .img-fluid {
