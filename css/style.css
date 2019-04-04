@@ -13,11 +13,37 @@ html, body {
 
 body {
 	font: 100%/1 'PT Serif', serif;
-	background: #fff;
+	background-color: beige;
 	color: #333;
-	border-top: 3.5em solid #B9D6F2;	
 }
 
+/*navbar-brand*/
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float:none;
+}
+
+
+.navbar-brand{
+  font-family: "times new roman", times, serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 45px;
+  font-weight: bold;
+
+
+}
+.nav-link{
+  font-size: 25px;	
+}
+/*navbar-brand-end*/
 :active, :focus {
 	outline-style: none;
 }
