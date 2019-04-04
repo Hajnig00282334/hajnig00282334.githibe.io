@@ -83,9 +83,6 @@ ul {
   overflow: hidden;
  
 }
-
-
-
 li a {
   display: block;
   color: white;
@@ -145,14 +142,14 @@ footer.page-footer {
   -moz-column-width: 100%;
   column-width: 100%;
   }
-  }
+}
   
   @media (max-width: 400px) {
   .btn.filter {
   padding-left: 1.1rem;
   padding-right: 1.1rem;
   }
-}
+  }
 /*contact*/
 .form-sec{width:400px;
    background:#ccc; 
@@ -168,7 +165,7 @@ body{
   padding: 0;
 }
 section {
-  height: auto;
+  height: 600px;
   background-image: url("../img/wasabi.jpeg");
   background-repeat: no-repeat;
   margin-bottom: 10px;
