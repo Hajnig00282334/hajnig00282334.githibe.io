@@ -583,6 +583,7 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 20px;
+  
 }
 
 .no-gutters {
@@ -4604,6 +4605,7 @@ input[type="button"].btn-block {
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  margin-bottom: 20px;
  
 }
 
