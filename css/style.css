@@ -43,6 +43,11 @@ body {
 .nav-link{
   font-size: 25px;	
 }
+/*logo*/
+.logo{
+  height:100px;
+  position: relative;
+  }
 /*navbar-brand-end*/
 :active, :focus {
 	outline-style: none;
