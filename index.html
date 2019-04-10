@@ -316,7 +316,7 @@
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
                                 <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <a href="https://www.m.facebook.com/chefpatrickloewen/?epa=SEARCH_BOX"
+                                    <a href="https://www.facebook.com/chefpatrickloewen/?epa=SEARCH_BOX"
                                         class="fab fa-facebook-f"></a>
                                 </a>
                             </li>
@@ -358,13 +358,6 @@
             var moveY = (e.pageY * -1 / 10);
             $(this).css('background-position', moveX + 'px ' + moveY + 'px')
         })
-        // background.js
-browser.runtime.onMessage.addListener(message => {
-  console.log("background: onMessage", message);
-
-  // Add this line:
-  return Promise.resolve("Dummy response to keep the console quiet");
-});
     </script>
 
 </body>
